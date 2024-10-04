@@ -31,4 +31,4 @@ Imagenes:
     docker history nginx
     docker image prune
 
-https://youtu.be/Q0AIECxW8Fo?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0
+https://youtu.be/A8oXDTDhZWU?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0
