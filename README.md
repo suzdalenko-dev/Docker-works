@@ -32,14 +32,24 @@ Imagenes:
     docker image prune
 
 
+Como construir imagenes:
+    FROM indica imagen base que se utilizara para construir la nueva imagen
+    RUN ejecuta comandos en la imagen
+    COPY copia archivos o directorios desde host a la imagen
+    WORKDIR establece el directorio de trabajo cuando se inicie un contenedor a partir de la imagen
+    CMD define el comando que se ejecutra cuando se inicie un contenedor a partir de la imagen
+    ENTRYPOINT define el comando que se ejecutra cuando se incio un contenedor a partir de la imagen, pero no se puede sobreescribir
+
+    docker build . -t app-ingix
+    docker images                                           (y tengo la imagen contruida por mi "app-ingix")
+    docker run -d --name app-ingix -p 8282:80 app-ingix     (y funciona mi propio contenedor)
+
+    docker build -t mypython .
+    docker run -it mypython
 
 
 
 
 
 
-
-
-
-
-https://youtu.be/A8oXDTDhZWU?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0
+https://youtu.be/bd8EoJbKmwQ?list=PLQhxXeq1oc2n7YnjRhq7qVMzZWtDY7Zz0
