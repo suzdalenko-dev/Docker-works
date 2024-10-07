@@ -40,13 +40,13 @@ Como construir imagenes:
     CMD define el comando que se ejecutra cuando se inicie un contenedor a partir de la imagen
     ENTRYPOINT define el comando que se ejecutra cuando se incio un contenedor a partir de la imagen, pero no se puede sobreescribir
 
-    docker build . -t app-ingix
+    docker build . -t mi_nginx
     docker images                                           (y tengo la imagen contruida por mi "app-ingix")
-    docker run -d --name app-ingix -p 8282:80 app-ingix     (y funciona mi propio contenedor)
+    docker run -d --name mi_nginx -p 8888:80 mi_nginx     (y funciona mi propio contenedor)
 
-    docker build -t mypython .
+    docker build . -t mypython
     docker run -it mypython
-
+    docker start -it mypython
 
 
 
